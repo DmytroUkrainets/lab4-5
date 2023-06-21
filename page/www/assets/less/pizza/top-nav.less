@@ -1,0 +1,113 @@
+#top-nav{
+  background-color: rgba(19, 16, 16, 0.753);
+  height:70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left:10px;
+  z-index: 1;
+}
+
+#badge {
+  transform: rotate(180deg);
+  z-index: 2;
+  position: fixed;
+  top: 83px; left: 10px;
+  width: 100px;
+}
+
+.header-info {
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: calc(~'100% - 520px');
+  position: fixed;
+  top: 0;
+  left: 140px;
+  z-index: 2;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.phone, .days, .free {
+  margin: 0;
+}
+
+#bookmark-1 {
+  position: absolute;
+  top: -40px;
+  left: -30px;
+  width: 180px;
+  z-index: 2;
+}
+
+#bookmark-2 {
+  position: fixed;
+  bottom: -20px; /* Adjust the value as needed */
+  left: -30px;
+  width: 180px;
+  z-index: 1000;
+  transform: rotate(180deg);
+}
+
+#bottom-sale {
+  position: fixed;
+
+  top: 87%; /* Adjust the value as needed */
+  left: -30px;
+  width: 180px;
+  z-index: 1005;
+}
+
+#bottom-sale h3 {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.rect {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  z-index: 3;
+  font-size: 12px;
+
+  h3 {
+  margin: 0;
+  line-height: 0.8;
+  color: white;
+  font-weight: 700;
+}
+}
+
+
+
+.bottomText{
+  color: rgb(255, 255, 255);
+  height: 40px;
+  position: absolute;
+  top:25px; 
+  left: 140px;
+  z-index: 2;
+}
+
+.login-btn {
+  height: 30px;
+  text-decoration: none;
+}
+
+hr.dashed {
+  border-top: 3px solid white;
+  width: 50%;
+  text-decoration: none;
+}
+
+@media (max-width: 1080px) {
+  .days, .free {
+    display: none;
+  }
+}

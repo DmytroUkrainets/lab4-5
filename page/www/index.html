@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ua">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Pizza</title>
+    <link rel="stylesheet/less" type="text/css" href="assets\less\main.less" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+  </head>
+  <body>
+    <article>
+      <div id="left-side">
+        <div id="top-nav">
+          <div class="header-info">
+            <h5 class="phone">(044) 222 5 222</h5>
+            <h6 class="days">24 години 7 днів на тиждень</h6>
+            <h5 class="free">Безкоштовна доставка піци</h5>
+            <a href="#" class="add-to-order login-btn">Ввійти</a>
+          </div>
+          <div class="bottomText">
+            <h5>Піца</h5>
+          </div>
+          <img
+            id="bookmark-1"
+            src="assets\images\bookmark-100s-200px.svg"
+            alt="Size Icon"
+          />
+          <section class="rect">
+            <h3>Pizza<br />KMA</h3>
+          </section>
+        </div>
+        <header>
+          <div id="all-orders">
+            <div id="main-pay-label">Усі піци</div>
+            <div id="main-pay-sum">8</div>
+          </div>
+          <div id="filter">
+            <div
+              class="filter-property active-property"
+              content="all"
+              onclick="changeFilter(this)"
+            >
+              Усі
+            </div>
+            <div
+              class="filter-property"
+              content="meat"
+              onclick="changeFilter(this)"
+            >
+              М'ясні
+            </div>
+            <div
+              class="filter-property"
+              content="pineapple"
+              onclick="changeFilter(this)"
+            >
+              З анасами
+            </div>
+            <div
+              class="filter-property"
+              content="mushroom"
+              onclick="changeFilter(this)"
+            >
+              З грибами
+            </div>
+            <div
+              class="filter-property"
+              content="ocean"
+              onclick="changeFilter(this)"
+            >
+              З морепродуктами
+            </div>
+            <div
+              class="filter-property"
+              content="vegan"
+              onclick="changeFilter(this)"
+            >
+              Веган
+            </div>
+          </div>
+        </header>
+        <div id="cart-wrapper">
+          <div id="cart"></div>
+        </div>
+        <footer>
+          <div>
+            Pizza.22 - практичний проєкт в межах курсу Вступ до веб-розробки в
+            Києва-Могилянській Академії
+          </div>
+          <div>Доставка піци не здійснюється</div>
+        </footer>
+        <img
+          id="bookmark-2"
+          src="assets\images\bookmark-100s-200px.svg"
+          alt="Size Icon"
+        />
+        <section class="rect" id="bottom-sale">
+          <h3>Цього<br />тижня<br />на все</h3>
+          <hr class="dashed" />
+          <h3>-20%</h3>
+        </section>
+      </div>
+
+      <div id="right-side">
+        <div id="order-panel">
+          <span class="order-label">Замовлення</span>
+          <div id="yellow-counter">0</div>
+          <a href="javascript:removeAllItems()" class="clear-order"
+            >Очистити замовлення</a
+          >
+        </div>
+        <div id="order-list"></div>
+        <div id="bill">
+          <div id="bill-pay">
+            <div id="bill-pay-label">Сума замовлення</div>
+            <div id="bill-pay-sum">0 грн</div>
+          </div>
+          <button class="add-to-order pay-for-order" type="button">
+            Замовити
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <script src="scripts/init.js"></script>
+    <script src="scripts/order_scripts.js"></script>
+    <script src="scripts/filter.js"></script>
+  </body>
+</html>
